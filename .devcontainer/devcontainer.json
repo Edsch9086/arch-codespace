@@ -1,0 +1,59 @@
+{
+	"name": "ArchLinux development container",
+	"image": "ghcr.io/archlinux/archlinux:base-devel",
+	"features": {
+		"ghcr.io/memchr/codespaces-archlinux/common:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/git:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/base-devel:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/llvm:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/node:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/python:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/go:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/ssh:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/github:latest": {
+			"useAct": true
+		},
+		"ghcr.io/memchr/codespaces-archlinux/docker:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/aur:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/zsh:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/onedark:latest": {},
+		"ghcr.io/memchr/codespaces-archlinux/swap": {},
+		"./local-features/devcontainer": {},
+		"ghcr.io/memchr/codespaces-archlinux/cleanup:latest": {}
+	},
+	"overrideFeatureInstallOrder": [
+		"ghcr.io/memchr/codespaces-archlinux/common:latest",
+		"ghcr.io/memchr/codespaces-archlinux/git:latest",
+		"ghcr.io/memchr/codespaces-archlinux/base-devel:latest",
+		"ghcr.io/memchr/codespaces-archlinux/llvm:latest",
+		"ghcr.io/memchr/codespaces-archlinux/node:latest",
+		"ghcr.io/memchr/codespaces-archlinux/python:latest",
+		"ghcr.io/memchr/codespaces-archlinux/go:latest",
+		"ghcr.io/memchr/codespaces-archlinux/ssh:latest",
+		"ghcr.io/memchr/codespaces-archlinux/github:latest",
+		"ghcr.io/memchr/codespaces-archlinux/docker:latest",
+		"ghcr.io/memchr/codespaces-archlinux/aur:latest",
+		"ghcr.io/memchr/codespaces-archlinux/zsh:latest",
+		"ghcr.io/memchr/codespaces-archlinux/onedark:latest",
+		"./local-features/devcontainer",
+		"ghcr.io/memchr/codespaces-archlinux/swap:latest",
+		"ghcr.io/memchr/codespaces-archlinux/cleanup:latest"
+	],
+	"remoteUser": "codespace",
+	"containerUser": "codespace",
+	"postStartCommand": "rm -rf /workspaces/.codespaces/shared/editors",
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+				"memchr/linux-clang": {
+					"permissions": "write-all"
+				}
+			}
+		},
+		"vscode": {
+			"extensions": [
+				"timonwong.shellcheck"
+			]
+		}
+	}
+}

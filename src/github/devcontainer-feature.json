@@ -1,0 +1,22 @@
+{
+	"id": "github",
+	"name": "GitHub",
+	"description": "Installs the GitHub CLI and tools.",
+	"version": "1.2.1",
+	"options": {
+		"useAct": {
+			"type": "boolean",
+			"description": "Install nektos/act (run github workflows locally)",
+			"default": false
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.codespaces",
+				"GitHub.vscode-pull-request-github",
+				"github.vscode-github-actions"
+			]
+		}
+	}
+}

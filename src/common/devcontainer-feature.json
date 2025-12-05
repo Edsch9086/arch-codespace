@@ -1,0 +1,36 @@
+{
+	"id": "common",
+	"name": "common setup",
+	"description": "Install and setup common packages, and setup non-root user.",
+	"version": "2.3.0",
+	"options": {
+		"username": {
+			"type": "string",
+			"default": "codespace"
+		},
+		"userUid": {
+			"type": "string",
+			"default": "1000"
+		},
+		"userGid": {
+			"type": "string",
+			"default": "1000"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.hexeditor",
+				"ms-vscode.makefile-tools",
+				"ms-vscode.cmake-tools",
+				"EditorConfig.EditorConfig",
+				"aaron-bond.better-comments",
+				"ms-vscode.live-server",
+				"mesonbuild.mesonbuild",
+				"albert.TabOut",
+				"redhat.vscode-xml",
+				"redhat.vscode-yaml"
+			]
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"name": "ArchLinux development container",
+	"image": "ghcr.io/archlinux/archlinux:base-devel",
+	"features": {
+		"./features/common": {},
+		"./features/git": {},
+		"./features/base-devel": {},
+		"./features/llvm": {},
+		"./features/node": {},
+		"./features/python": {},
+		"./features/go": {},
+		"./features/ssh": {},
+		"./features/github": {
+			"useAct": true
+		},
+		"./features/docker": {},
+		"./features/aur": {},
+		"./features/zsh": {},
+		"./features/onedark": {},
+		"./features/cleanup": {}
+	},
+	"overrideFeatureInstallOrder": [
+		"./features/common",
+		"./features/git",
+		"./features/base-devel",
+		"./features/llvm",
+		"./features/node",
+		"./features/python",
+		"./features/go",
+		"./features/ssh",
+		"./features/github",
+		"./features/docker",
+		"./features/aur",
+		"./features/zsh",
+		"./features/onedark",
+		"./features/cleanup"
+	],
+	"remoteUser": "codespace",
+	"containerUser": "codespace"
+}
