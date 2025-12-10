@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+        td, th {
+            border: 1px solid #333;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            height: 80px;
+        }
+        th {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+        .gnu-linux {
+            background-color: #ffcccc;
+        }
+        .debian {
+            background-color: #ccccff;
+        }
+        .ubuntu {
+            background-color: #ffffcc;
+        }
+        .suse {
+            background-color: #ccffcc;
+        }
+        .redhat {
+            background-color: #ffccff;
+        }
+        .arch {
+            background-color: #ffeecc;
+        }
+        .gentoo {
+            background-color: #ccffff;
+        }
+        .standalone {
+            background-color: #eeeeee;
+        }
+        .mobile {
+            background-color: #ddddff;
+        }
+        .empty {
+            background-color: white;
+        }
+        .distro-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .atomic-num {
+            font-size: 10px;
+            color: #666;
+        }
+        .atomic-symbol {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 3px;
+        }
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .legend-item {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        .patterns {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Linux Distribution Periodic Table</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Group 1<br>(GNU/Linux)</th>
+                <th>Group 2<br>(Debian)</th>
+                <th>Group 3<br>(Ubuntu)</th>
+                <th>Group 4<br>(SUSE)</th>
+                <th>Group 5<br>(Red Hat)</th>
+                <th>Group 6<br>(Arch)</th>
+                <th>Group 7<br>(Gentoo)</th>
+                <th>Group 8<br>(Standalone)</th>
+                <th>Group 9<br>(Mobile)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Period 1: Foundational -->
+            <tr>
+                <td class="gnu-linux">
+                    <div class="atomic-num">1</div>
+                    <div class="distro-name">GNU</div>
+                    <div class="atomic-symbol">Gn</div>
+            
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            
+            <!-- Period 2: Early Derivatives -->
+            <tr>
+                <td class="empty"></td>
+                <td class="debian">
+                    <div class="atomic-num">3</div>
+                    <div class="distro-name">Debian</div>
+                    <div class="atomic-symbol">Db</div>
+                </td>
+                <td class="ubuntu">
+                    <div class="atomic-num">4</div>
+                    <div class="distro-name">Ubuntu</div>
+                    <div class="atomic-symbol">Ub</div>
+                </td>
+                <td class="suse">
+                    <div class="atomic-num">5</div>
+                    <div class="distro-name">SuSE</div>
+                    <div class="atomic-symbol">Ss</div>
+                </td>
+                <td class="redhat">
+                    <div class="atomic-num">6</div>
+                    <div class="distro-name">Red Hat Enterprise<br>(RHEL)</div>
+                    <div class="atomic-symbol">Rh</div>
+                </td>
+                <td class="arch">
+                    <div class="atomic-num">20</div>
+                    <div class="distro-name">Arch</div>
+                    <div class="atomic-symbol">Ar</div>
+                </td>
+                <td class="gentoo">
+                    <div class="atomic-num">40</div>
+                    <div class="distro-name">Gentoo</div>
+                    <div class="atomic-symbol">Gt</div>
+                </td>
+                <td class="standalone">
+                    <div class="atomic-num">50</div>
+                    <div class="distro-name">Void Linux</div>
+                    <div class="atomic-symbol">Vd</div>
+                </td>
+                <td class="mobile">
+                    <div class="atomic-num">60</div>
+                    <div class="distro-name">Android</div>
+                    <div class="atomic-symbol">Ad</div>
+                </td>
+            </tr>
+            
+            <!-- Period 3: Modern Stable -->
+            <tr>
+                <td class="empty"></td>
+                <td class="debian">
+                    <div class="atomic-num">8</div>
+                    <div class="distro-name">Armbian</div>
+                    <div class="atomic-symbol">Am</div>
+                </td>
+                <td class="ubuntu">
+                    <div class="atomic-num">9</div>
+                    <div class="distro-name">Pop!OS</div>
+                    <div class="atomic-symbol">Po</div>
+                </td>
+                <td class="suse">
+                    <div class="atomic-num">10</div>
+                    <div class="distro-name">openSUSE</div>
+                    <div class="atomic-symbol">Os</div>
+                </td>
+                <td class="redhat">
+                    <div class="atomic-num">31</div>
+                    <div class="distro-name">Fedora</div>
+                    <div class="atomic-symbol">Fd</div>
+                </td>
+                <td class="arch">
+                    <div class="atomic-num">21</div>
+                    <div class="distro-name">Manjaro</div>
+                    <div class="atomic-symbol">Mj</div>
+                </td>
+                <td class="gentoo">
+                    <div class="atomic-num">45</div>
+                    <div class="distro-name">Pentoo</div>
+                    <div class="atomic-symbol">Pt</div>
+                </td>
+                <td class="standalone">
+                    <div class="atomic-num">55</div>
+                    <div class="distro-name">SailfishOS</div>
+                    <div class="atomic-symbol">Sf</div>
+                </td>
+                <td class="mobile">
+                    <div class="atomic-num">65</div>
+                    <div class="distro-name">GrapheneOS</div>
+                    <div class="atomic-symbol">Gp</div>
+                </td>
+            </tr>
+            
+            <!-- Period 4: Specialized/Rolling -->
+            <tr>
+                <td class="empty"></td>
+                <td class="debian">
+                    <div class="atomic-num">11</div>
+                    <div class="distro-name">Raspberry Pi OS</div>
+                    <div class="atomic-symbol">Rp</div>
+                </td>
+                <td class="ubuntu">
+                    <div class="atomic-num">12</div>
+                    <div class="distro-name">Zorin</div>
+                    <div class="atomic-symbol">Zr</div>
+                </td>
+                <td class="suse">
+                    <div class="atomic-num">13</div>
+                    <div class="distro-name">GeckoLinux</div>
+                    <div class="atomic-symbol">Gk</div>
+                </td>
+                <td class="redhat">
+                    <div class="atomic-num">32</div>
+                    <div class="distro-name">CentOS</div>
+                    <div class="atomic-symbol">Cn</div>
+                </td>
+                <td class="arch">
+                    <div class="atomic-num">23</div>
+                    <div class="distro-name">Arch ARM</div>
+                    <div class="atomic-symbol">Aa</div>
+                </td>
+                <td class="gentoo">
+                    <div class="atomic-num">41</div>
+                    <div class="distro-name">ChromeOS</div>
+                    <div class="atomic-symbol">Cr</div>
+                </td>
+                <td class="standalone">
+                    <div class="atomic-num">55</div>
+                    <div class="distro-name">Flatcar Linux</div>
+                    <div class="atomic-symbol">Fl</div>
+                </td>
+                <td class="mobile">
+                    <div class="atomic-num">62</div>
+                    <div class="distro-name">LineageOS</div>
+                    <div class="atomic-symbol">Ln</div>
+                </td>
+            </tr>
+            
+            <!-- Period 5: Lightweight/Alternative -->
+            <tr>
+                <td class="empty"></td>
+                <td class="debian">
+                    <div class="atomic-num">14</div>
+                    <div class="distro-name">Kali Linux</div>
+                    <div class="atomic-symbol">Kl</div>
+                </td>
+                <td class="ubuntu">
+                    <div class="atomic-num">15</div>
+                    <div class="distro-name">Lubuntu</div>
+                    <div class="atomic-symbol">Lu</div>
+                </td>
+                <td class="suse">
+                    <div class="atomic-num">16</div>
+                    <div class="distro-name">easyNAS</div>
+                    <div class="atomic-symbol">En</div>
+                </td>
+                <td class="redhat">
+                    <div class="atomic-num">36</div>
+                    <div class="distro-name">Oracle Linux</div>
+                    <div class="atomic-symbol">Ol</div>
+                </td>
+                <td class="arch">
+                    <div class="atomic-num">24</div>
+                    <div class="distro-name">Garuda</div>
+                    <div class="atomic-symbol">Gr</div>
+                </td>
+                <td class="gentoo">
+                    <div class="atomic-num">42</div>
+                    <div class="distro-name">Sabayon</div>
+                    <div class="atomic-symbol">Sb</div>
+                </td>
+                <td class="standalone">
+                    <div class="atomic-num">64</div>
+                    <div class="distro-name">NixOS</div>
+                    <div class="atomic-symbol">Nx</div>
+                </td>
+                <td class="mobile">
+                    <div class="atomic-num">63</div>
+                    <div class="distro-name">Androidx84</div>
+                    <div class="atomic-symbol">Ax</div>
+                </td>
+            </tr>
+            
+            <!-- Period 6: Enterprise/Specialized -->
+            <tr>
+                <td class="empty"></td>
+                <td class="debian">
+                    <div class="atomic-num">17</div>
+                    <div class="distro-name">UberStudent</div>
+                    <div class="atomic-symbol">Us</div>
+                </td>
+                <td class="ubuntu">
+                    <div class="atomic-num">18</div>
+                    <div class="distro-name">Xubuntu</div>
+                    <div class="atomic-symbol">Xu</div>
+                </td>
+                <td class="suse">
+                    <div class="atomic-num">19</div>
+                    <div class="distro-name">SUSE Enterprise<br>Server</div>
+                    <div class="atomic-symbol">Se</div>
+                </td>
+                <td class="redhat">
+                    <div class="atomic-num">37</div>
+                    <div class="distro-name">CERN Linux</div>
+                    <div class="atomic-symbol">Ce</div>
+                </td>
+                <td class="arch">
+                    <div class="atomic-num">25</div>
+                    <div class="distro-name">Endeavoros</div>
+                    <div class="atomic-symbol">Ed</div>
+                </td>
+                <td class="gentoo">
+                    <div class="atomic-num">43</div>
+                    <div class="distro-name">Funtoo</div>
+                    <div class="atomic-symbol">Fn</div>
+                </td>
+                <td class="standalone">
+                    <div class="atomic-num">55</div>
+                    <div class="distro-name">SailfishOS</div>
+                    <div class="atomic-symbol">Sf</div>
+                </td>
+                <td class="mobile">
+                    <div class="atomic-num">64</div>
+                    <div class="distro-name">Tizen</div>
+                    <div class="atomic-symbol">Tz</div>
+                </td>
+            </tr>
+            
+            <!-- Period 7: Niche/Experimental -->
+            <tr>
+                <td class="empty"></td>
+                <td class="debian">
+                    <div class="atomic-num">7</div>
+                    <div class="distro-name">Tails</div>
+                    <div class="atomic-symbol">Tl</div>
+                </td>
+                <td class="ubuntu">
+                    <div class="atomic-num">22</div>
+                    <div class="distro-name">Kubuntu</div>
+                    <div class="atomic-symbol">Kb</div>
+                </td>
+                <td class="suse">
+                    <div class="atomic-num">26</div>
+                    <div class="distro-name">Astaro</div>
+                    <div class="atomic-symbol">At</div>
+                </td>
+                <td class="redhat">
+                    <div class="atomic-num">38</div>
+                    <div class="distro-name">ClearOS</div>
+                    <div class="atomic-symbol">Cl</div>
+                </td>
+                <td class="arch">
+                    <div class="atomic-num">29</div>
+                    <div class="distro-name">CachyOS</div>
+                    <div class="atomic-symbol">Co</div>
+                </td>
+                <td class="gentoo">
+                    <div class="atomic-num">48</div>
+                    <div class="distro-name">Gentoox</div>
+                    <div class="atomic-symbol">Gx</div>
+                </td>
+                <td class="standalone">
+                    <div class="atomic-num">59</div>
+                    <div class="distro-name">CloudReady/<br>Flex</div>
+                    <div class="atomic-symbol">Cf</div>
+                </td>
+                <td class="mobile">
+                    <div class="atomic-num">66</div>
+                    <div class="distro-name">NST</div>
+                    <div class="atomic-symbol">Ns</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="legend">
+        <div class="legend-item gnu-linux"><strong>GNU/Linux</strong> - Foundational</div>
+        <div class="legend-item debian"><strong>Debian</strong> - Package-based</div>
+        <div class="legend-item ubuntu"><strong>Ubuntu</strong> - Ubuntu variants</div>
+        <div class="legend-item suse"><strong>SUSE</strong> - Enterprise-focused</div>
+        <div class="legend-item redhat"><strong>Red Hat</strong> - RHEL derivatives</div>
+        <div class="legend-item arch"><strong>Arch</strong> - Rolling release</div>
+        <div class="legend-item gentoo"><strong>Gentoo</strong> - Source-based</div>
+        <div class="legend-item standalone"><strong>Standalone</strong> - Independent</div>
+        <div class="legend-item mobile"><strong>Mobile</strong> - Mobile/Embedded</div>
+    </div>
+    
+    <div class="patterns">
+        <h2>Atomic Symbols Reference</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
+            <tr style="background-color: #f0f0f0;">
+                <th style="border: 1px solid #999; padding: 8px; text-align: left;">Symbol</th>
+                <th style="border: 1px solid #999; padding: 8px; text-align: left;">Distribution</th>
+                <th style="border: 1px solid #999; padding: 8px; text-align: left;">Atomic #</th>
+                <th style="border: 1px solid #999; padding: 8px; text-align: left;">Symbol</th>
+                <th style="border: 1px solid #999; padding: 8px; text-align: left;">Distribution</th>
+                <th style="border: 1px solid #999; padding: 8px; text-align: left;">Atomic #</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Gn</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">GNU</td>
+                <td style="border: 1px solid #999; padding: 8px;">1</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Lx</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">2</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Db</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Debian</td>
+                <td style="border: 1px solid #999; padding: 8px;">3</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ub</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Ubuntu</td>
+                <td style="border: 1px solid #999; padding: 8px;">4</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ss</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">SuSE</td>
+                <td style="border: 1px solid #999; padding: 8px;">5</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Rh</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Red Hat Enterprise</td>
+                <td style="border: 1px solid #999; padding: 8px;">6</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Tl</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Tails</td>
+                <td style="border: 1px solid #999; padding: 8px;">7</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Am</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Armbian</td>
+                <td style="border: 1px solid #999; padding: 8px;">8</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Po</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Pop!OS</td>
+                <td style="border: 1px solid #999; padding: 8px;">9</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Os</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">openSUSE</td>
+                <td style="border: 1px solid #999; padding: 8px;">10</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Rp</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Raspberry Pi OS</td>
+                <td style="border: 1px solid #999; padding: 8px;">11</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Zr</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Zorin</td>
+                <td style="border: 1px solid #999; padding: 8px;">12</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Gk</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">GeckoLinux</td>
+                <td style="border: 1px solid #999; padding: 8px;">13</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Kl</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Kali Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">14</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Lu</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Lubuntu</td>
+                <td style="border: 1px solid #999; padding: 8px;">15</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>En</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">easyNAS</td>
+                <td style="border: 1px solid #999; padding: 8px;">16</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Us</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">UberStudent</td>
+                <td style="border: 1px solid #999; padding: 8px;">17</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Xu</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Xubuntu</td>
+                <td style="border: 1px solid #999; padding: 8px;">18</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Se</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">SUSE Enterprise Server</td>
+                <td style="border: 1px solid #999; padding: 8px;">19</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ar</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Arch</td>
+                <td style="border: 1px solid #999; padding: 8px;">20</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Mj</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Manjaro</td>
+                <td style="border: 1px solid #999; padding: 8px;">21</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Kb</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Kubuntu</td>
+                <td style="border: 1px solid #999; padding: 8px;">22</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Aa</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Arch ARM</td>
+                <td style="border: 1px solid #999; padding: 8px;">23</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Gr</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Garuda</td>
+                <td style="border: 1px solid #999; padding: 8px;">24</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ed</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Endeavoros</td>
+                <td style="border: 1px solid #999; padding: 8px;">25</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>At</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Astaro</td>
+                <td style="border: 1px solid #999; padding: 8px;">26</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Co</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">CachyOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">29</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Vd</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Void Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">50</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Fl</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Flatcar Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">51</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Nx</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">NixOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">65</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Wb</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">WebOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">51</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Tz</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Tizen</td>
+                <td style="border: 1px solid #999; padding: 8px;">58</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Cf</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">CloudReady/Flex</td>
+                <td style="border: 1px solid #999; padding: 8px;">59</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ad</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Android</td>
+                <td style="border: 1px solid #999; padding: 8px;">64</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ln</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">LineageOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">62</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ax</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Androidx84</td>
+                <td style="border: 1px solid #999; padding: 8px;">63</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Fl</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Flatcar Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">55</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Gp</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">GrapheneOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">60</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ns</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">NST</td>
+                <td style="border: 1px solid #999; padding: 8px;">66</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Fd</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Fedora</td>
+                <td style="border: 1px solid #999; padding: 8px;">31</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Cn</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">CentOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">32</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ol</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Oracle Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">36</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Ce</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">CERN Linux</td>
+                <td style="border: 1px solid #999; padding: 8px;">37</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Cl</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">ClearOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">38</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Gt</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Gentoo</td>
+                <td style="border: 1px solid #999; padding: 8px;">40</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Cr</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">ChromeOS</td>
+                <td style="border: 1px solid #999; padding: 8px;">41</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Sb</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Sabayon</td>
+                <td style="border: 1px solid #999; padding: 8px;">42</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Fn</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Funtoo</td>
+                <td style="border: 1px solid #999; padding: 8px;">43</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Pt</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Pentoo</td>
+                <td style="border: 1px solid #999; padding: 8px;">45</td>
+                <td style="border: 1px solid #999; padding: 8px;"><strong>Gx</strong></td>
+                <td style="border: 1px solid #999; padding: 8px;">Gentoox</td>
+                <td style="border: 1px solid #999; padding: 8px;">48</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="patterns">
+        <h2>Atomic Symbols & Organizational Patterns</h2>
+        
+        <h3>Atomic Symbols - Naming Convention:</h3>
+        <p>Each distribution has a unique two-letter atomic symbol derived from its name:</p>
+        <ul>
+            <li><strong>Gn</strong> = GNU (founding element)</li>
+            <li><strong>Lx</strong> = Linux (kernel element)</li>
+            <li><strong>First + Second Letter Pattern:</strong> Most distributions use their first and second letters (Db=Debian, Ub=Ubuntu, Ar=Arch, Gt=Gentoo)</li>
+            <li><strong>Special Cases:</strong> Some use first letter + distinctive letter (Tl=Tails, Rp=Raspberry Pi OS, Os=openSUSE, Zr=Zorin)</li>
+        </ul>
+        
+        <h2>Organizational Patterns</h2>
+        <h3>Periods (Rows) - Maturity & Specialization Levels:</h3>
+        <ul>
+            <li><strong>Period 1:</strong> Foundational - GNU and Linux kernel (the base elements)</li>
+            <li><strong>Period 2:</strong> Early Derivatives - First major distribution families established</li>
+            <li><strong>Period 3:</strong> Modern Stable - Well-established, widely-adopted distributions</li>
+            <li><strong>Period 4:</strong> Specialized/Rolling - Specialized editions and rolling releases</li>
+            <li><strong>Period 5:</strong> Lightweight/Alternative - Lightweight variants and niche purposes</li>
+            <li><strong>Period 6:</strong> Enterprise/Specialized - Enterprise-grade and specialized deployments</li>
+            <li><strong>Period 7:</strong> Niche/Experimental - Highly specialized or experimental distributions</li>
+        </ul>
+        
+        <h3>Groups (Columns) - Distribution Families & Characteristics:</h3>
+        <ul>
+            <li><strong>Group 1:</strong> GNU/Linux - The foundational elements (only Period 1)</li>
+            <li><strong>Group 2:</strong> Debian Family - apt/dpkg systems (atomic numbers 1-19)</li>
+            <li><strong>Group 3:</strong> Ubuntu Variants - Ubuntu-based desktop distributions (within apt range)</li>
+            <li><strong>Group 4:</strong> SUSE Family - YaST-based enterprise distributions (within rpm range)</li>
+            <li><strong>Group 5:</strong> Red Hat Family - RPM-based, RHEL derivatives (atomic numbers 30-39)</li>
+            <li><strong>Group 6:</strong> Arch Family - Rolling release, pacman package manager (atomic numbers 20-29)</li>
+            <li><strong>Group 7:</strong> Gentoo Family - Source-based, emerge package manager (atomic numbers 40-49)</li>
+            <li><strong>Group 8:</strong> Standalone/Independent - Unique package managers or approaches (atomic numbers 50-70)</li>
+            <li><strong>Group 9:</strong> Mobile/Embedded - Android, mobile, and embedded systems (highest numbers in each range)</li>
+        </ul>
+        
+        <h3>Atomic Number Pattern:</h3>
+        <ul>
+            <li><strong>Formula: Based on Package Manager + Architecture + Release Model + Specialization</strong></li>
+            <li><strong>Package Manager (Primary Characteristic):</strong>
+                <ul>
+                    <li>apt/dpkg (Debian-based): 1-19</li>
+                    <li>pacman (Arch-based): 20-29</li>
+                    <li>rpm (Red Hat-based): 30-39</li>
+                    <li>emerge (Gentoo-based): 40-49</li>
+                    <li>Other/Independent: 50-70</li>
+                </ul>
+            </li>
+            <li><strong>Architecture Support (Secondary Modifier):</strong>
+                <ul>
+                    <li>x86_64 only: base number</li>
+                    <li>ARM support (RPi, Armbian, Arch ARM): +1 within range</li>
+                    <li>Mobile platforms: +5 to +15 within range</li>
+                </ul>
+            </li>
+            <li><strong>Release Model (Tertiary Modifier):</strong>
+                <ul>
+                    <li>Stable/LTS: base assignment</li>
+                    <li>Rolling (Arch, Garuda, openSUSE Tumbleweed): sequential within package manager range</li>
+                    <li>Specialized/Security-focused (Tails, Kali, Pentoo): lower numbers within range (more fundamental)</li>
+                </ul>
+            </li>
+            <li><strong>Specialization Level (Final Modifier):</strong>
+                <ul>
+                    <li>Community distributions: standard numbering</li>
+                    <li>Enterprise-focused (RHEL, SUSE Enterprise): higher end of rpm range (30-39)</li>
+                    <li>Highly specialized (ChromeOS, WebOS, Android variants): shift within category range</li>
+                </ul>
+            </li>
+            <li><strong>Examples:</strong>
+                <ul>
+                    <li>Debian (foundational apt distro): 3</li>
+                    <li>Tails (security-specialized Debian): 7</li>
+                    <li>Arch (foundational pacman distro): 20</li>
+                    <li>Manjaro (user-friendly rolling Arch): 21</li>
+                    <li>RHEL (foundational rpm distro): 6</li>
+                    <li>Fedora (rolling rpm distro): 31</li>
+                    <li>Gentoo (foundational emerge distro): 40</li>
+                    <li>ChromeOS (Gentoo-based specialized): 41</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
